@@ -1,7 +1,7 @@
 
 # Football Match Data Processing & Feature Engineering Pipeline
 
-This document outlines the technical process for ingesting, cleaning, enriching, and preparing football match data for further analysis or modeling. The pipeline consists of several Python scripts that sequentially process data, generating intermediate Excel files.
+This document outlines the technical process for ingesting, cleaning, enriching, and preparing [football match data](https://github.com/xgabora/Club-Football-Match-Data-2000-2025) for further analysis or modeling. The pipeline consists of several Python scripts that sequentially process data, generating intermediate Excel files.
 
 ## 1. Initial Setup and Requirements
 
@@ -140,11 +140,11 @@ The pipeline consists of five main Python scripts, executed sequentially. Each s
     *   **Data Integration:** Joins the calculated cluster probabilities back to the main match DataFrame.
 *   **Output:** `output_data/matches_with_clusters.xlsx`. This file contains the data from `matches_with_form.xlsx` augmented with columns for cluster probabilities (e.g., `C_LTH`, `C_HTB`, etc.).
 
-## 4. Final Thoughts and Potential Enhancements
+## 4. Final Thoughts and Considerations
 
 ### 4.1. Current State
 
-The pipeline successfully processes raw football data, enriches it with Elo ratings, calculates team form, and assigns stylistic cluster probabilities. The output is a comprehensive dataset ready for further analysis or input into predictive models. The process is modular, with each script performing a distinct step and producing an intermediate Excel file, which aids in debugging and verification.
+The pipeline successfully processes raw football data, enriches it with Elo ratings, calculates team form, and assigns stylistic cluster probabilities. The output is a comprehensive [dataset](https://github.com/xgabora/Club-Football-Match-Data-2000-2025) ready for further analysis or input into predictive models. The process is modular, with each script performing a distinct step and producing an intermediate Excel file, which aids in debugging and verification.
 
 ### 4.2. Key Considerations
 
